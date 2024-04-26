@@ -4,7 +4,7 @@ let rippleAngles = [];
 function setup() {
   let mycanvas = createCanvas(800, 500);
   mycanvas.parent("p5-canvas-container");
-  // initial bubbles
+  // initial bubbless
   for (let i = 0; i < 20; i++) {
     bubbles.push(
       new Bubble(

@@ -52,7 +52,7 @@ body {
   background-color: rgb(199, 4, 4);
   position: sticky;
   left: 50x;
-  top: 50px;
+  top: 0px;
   /*display: none;*/
   border: 4px solid rgb(8, 4, 4);
 }
@@ -121,7 +121,7 @@ canvas {
 }
 
 body {
-  background-image: url('images/background-image.HEIC'); /* Adjust the path */
+  background-image: url('images/background-image.png'); /* Adjust the path */
   background-repeat: no-repeat;  /* Prevents the image from repeating */
   background-size: cover;        /* Makes the image cover the entire screen */
 }

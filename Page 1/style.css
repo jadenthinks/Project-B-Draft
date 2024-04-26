@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(136, 62, 62);
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+  
+  .red{
+    background-color: red;
+    margin: 50px 100px 50px 100px;
+    padding: 50px 100px 50px;
+    border: 10px ridge darkred;
+    z-index: -1;
+  }
+  
+  .blue{
+    background-color: deepskyblue;
+    margin: 50px 100px 50px 100px;
+    padding: 50px 100px 50px;
+    border: 10px ridge darkblue;
+  }
+  
+  .green{
+    background-color: green;
+    position: absolute;
+    left: 200x;
+    top: 0px;
+    border: solid darkgreen;
+  }
+  
+  .purple{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 200x;
+    top: 500px;
+    border: solid rgb(87, 36, 53);
+  }
+  
+  .homebuttontop{
+    background-color: rgb(22, 136, 55);
+    position: fixed;
+    left: 50x;
+    top: 0px;
+    border: ridge rgb(20, 106, 17);
+  }
+  
+  .brown{
+    background-color: rgb(199, 4, 4);
+    position: sticky;
+    left: 50x;
+    top: 50px;
+    /*display: none;*/
+    border: 4px solid rgb(8, 4, 4);
+  }
+  
+  .yellow{
+    background-color: rgb(207, 207, 197);
+    margin: 20px 50px 20px 50px;
+    padding: 25px 50px 25px;
+    border: 10px ridge rgb(255, 255, 255);
+  }
+  
+  .box{
+    width: 120px;
+    height: 35px;
+    /*display: inline-block;*/
+  }
+  
+  #wrapper{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: .5em outset rgb(20, 122, 7);
+  }
+  
+  .circleBase {
+    border-radius: 50%;
+  }
+  
+  .circle1 {
+    width: 400px;
+    height: 460px;
+    background: #9e9a9a;
+    margin: 50px 100px 50px 100px;
+    padding: 50px 100px 50px;
+    border: 10px ridge rgb(0, 0, 0);
+  }
+  canvas {
+    display: block;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
+  #p5-canvas-container {
+    margin: auto;
+    width: 800px;
+  }
+  
+  #title-wrapper {
+    text-align: center;
+  }
+  .headline {
+    font-size: 3em;
+    font-family: "Luckiest Guy", cursive;;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  body {
+    background-image: url('/images/background-image-ingredients.jpg'); /* Adjust the path */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-size: cover;        /* Makes the image cover the entire screen */
+  }
+  
+  .luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
