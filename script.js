@@ -2,7 +2,7 @@ let bubbles = [];
 let rippleAngles = [];
 
 function setup() {
-  let mycanvas = createCanvas(800, 500);
+  let mycanvas = createCanvas(800, 350);
   mycanvas.parent("p5-canvas-container");
   // initial bubbless
   for (let i = 0; i < 20; i++) {

@@ -49,12 +49,12 @@ body {
 }
 
 .brown{
-  background-color: rgb(199, 4, 4);
+  background-color: rgb(110, 135, 224);
   position: sticky;
   left: 50x;
   top: 0px;
   /*display: none;*/
-  border: 4px solid rgb(8, 4, 4);
+  border: 4px solid rgb(107, 186, 217);
 }
 
 .yellow{
@@ -65,14 +65,15 @@ body {
 }
 
 .box{
-  width: 120px;
-  height: 35px;
+  width: 200px;
+  height: 50px;
   /*display: inline-block;*/
 }
 
 #wrapper{
   position: relative;
-  background-color: rgb(255, 255, 255);
+  background-image: url('/images/background-image.jpg'); 
+  background-color: #a1101069;
   width: 800px;
   margin: auto;
   padding: 10px;
@@ -82,7 +83,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border: .5em outset rgb(122, 7, 7);
+  border: .5em outset rgb(96, 155, 211);
 }
 
 .circleBase {
@@ -116,14 +117,16 @@ canvas {
 .headline {
   font-size: 3em;
   font-family: "Luckiest Guy", cursive;;
-  color: rgb(199, 4, 4);
+  color: rgb(93, 0, 0);
   font-weight: 600;
+  z-index: -1;
 }
 
 body {
-  background-image: url('images/background-image.png'); /* Adjust the path */
-  background-repeat: no-repeat;  /* Prevents the image from repeating */
-  background-size: cover;        /* Makes the image cover the entire screen */
+  background-image: url('images/background-image.jpg');
+  background-repeat: no-repeat;  
+  background-size: cover;    
+  position: relative;
 }
 
 .luckiest-guy-regular {

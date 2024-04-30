@@ -58,21 +58,24 @@ body {
   }
   
   .yellow{
-    background-color: rgb(207, 207, 197);
+    background-color: rgb(124, 39, 39);
     margin: 20px 50px 20px 50px;
     padding: 25px 50px 25px;
     border: 10px ridge rgb(255, 255, 255);
+    color: rgb(255, 172, 172);
+
   }
   
   .box{
-    width: 120px;
-    height: 35px;
+    width: 180px;
+    height: 50px;
+    font-size: .75em;
     /*display: inline-block;*/
   }
   
   #wrapper{
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-image: url('/images/background-image.jpg');
     width: 800px;
     margin: auto;
     padding: 10px;
@@ -121,9 +124,9 @@ body {
   }
   
   body {
-    background-image: url('/images/background-image-ingredients.jpg'); /* Adjust the path */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
-    background-size: cover;        /* Makes the image cover the entire screen */
+    background-image: url('/images/background-image-ingredients.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;     
   }
   
   .luckiest-guy-regular {
@@ -132,3 +135,14 @@ body {
     font-style: normal;
   }
   
+  .yellow.box { 
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .yellow.box img {
+    max-height: 75px;
+    max-width: 75px;  
+    margin-right: 5px; 
+  }
