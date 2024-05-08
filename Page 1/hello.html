@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lugrasimo&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Luckiest+Guy&family=Lugrasimo&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project-B-Draft</title>
-  <script src="lib/p5.js"></script>
-  <link rel="stylesheet" href="Page 1/style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-B-Draft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Luckiest+Guy&family=Lugrasimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
 </head>
 <body>
-  <div id="title-wrapper">
-    <h1 class="headline">Ingredients</h1>
-  <div id="p5-canvas-container"></div>
-  <div id="wrapper" class="flex-container">
-    <div class="homebuttontop"> <a href="/index.html"> Home</a></div>
-    <div class="yellow box">text 3</div>
-    <div class="yellow box">text 2</div>
-    <div class="yellow box">text 2</div>
-    <div class="yellow box">text 1</div>
-    <div class="purple">The Secret Sauce...</div>
+    <audio autoplay>
+        <source src="audio/I like Suace.mp3" type="audio/mpeg">
+    </audio>
+    <div id="title-wrapper">
+        <h1 class="headline">Sauce Simulator</h1>
+        <div id="wrapper" class="flex-container">
+            <div class="homebuttontop"> <button onclick="history.back()"> Back</button></div>
+            <div class="brown box"><a href="/The Menu/Menu.html">The Ingredients</a></div>
+            <div class="brown box"><a href="/index.html">Home</a></div>
+            <div id="p5-canvas-container"></div>
+        </div>
+        <div class="purple">The Secret Sauce...</div>
+        <script src="sketch2.js"></script>
+    </div>
 </body>
 </html>

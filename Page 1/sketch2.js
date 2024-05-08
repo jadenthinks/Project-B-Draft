@@ -10,8 +10,8 @@ foods = ["basil", "oregano", "ground beef", "garlic", "onion"];
 let mic;
 
 function setup() {
-    let mycanvas = createCanvas(800, 350);
-  mycanvas.parent("p5-canvas-container");
+    let mycanvas = createCanvas(400, 400);
+    mycanvas.parent("p5-canvas-container");
   sc = color(150, 50, 30)
   for (let i = 0; i < 500; i++) startdots()
   mic = new p5.AudioIn()
