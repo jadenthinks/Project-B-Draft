@@ -95,7 +95,7 @@ body {
   .circle1 {
     width: 400px;
     height: 460px;
-    background: #9e9a9a;
+    background: url('images/images/background-image-ingredients.jpg'); 
     margin: 50px 100px 50px 100px;
     padding: 50px 100px 50px;
     border: 10px ridge rgb(0, 0, 0);
