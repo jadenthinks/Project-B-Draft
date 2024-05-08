@@ -1,10 +1,9 @@
 let bubbles = [];
-let rippleAngles = [];
+let ra = [];
 
 function setup() {
   let mycanvas = createCanvas(800, 350);
   mycanvas.parent("p5-canvas-container");
-  // initial bubbless
   for (let i = 0; i < 20; i++) {
     bubbles.push(
       new Bubble(
@@ -14,27 +13,20 @@ function setup() {
       )
     );
   }
-  // ripple water effect
   for (let i = 0; i < 10; i++) {
-    rippleAngles.push(random(TWO_PI));
+    ra.push(random(TWO_PI));
   }
 }
 
 function draw() {
   clear()
-  //draw the pot
   fill(80);
   ellipse(width / 2, height / 2, 300, 300);
   drawHandles(width / 2, height / 2, 300, 300);
-
-  // water surface
   fill(0, 100, 255, 150);
   ellipse(width / 2, height / 2, 280, 280);
-
-  //ripples on the water
   drawRipples(width / 2, height / 2, 280, 280);
 
-  // Update and display bubbles
   for (let i = bubbles.length - 1; i >= 0; i--) {
     bubbles[i].update();
     bubbles[i].display();
@@ -43,7 +35,6 @@ function draw() {
     }
   }
 
-  //add new bubbles
   if (random(1) < 0.05) {
     bubbles.push(
       new Bubble(
@@ -56,7 +47,6 @@ function draw() {
 }
 
 function mousePressed() {
-  // bubble clicked
   for (let i = bubbles.length - 1; i >= 0; i--) {
     if (bubbles[i].clicked(mouseX, mouseY)) {
       bubbles.splice(i, 1);
@@ -73,17 +63,14 @@ class Bubble {
   }
 
   update() {
-    // bubbles growth
     this.r += 0.2;
-    // bubbles up
     this.y -= random(0.5, 2);
-    // bubbles side to side
     this.x += random(-1, 1);
   }
 
   display() {
     noStroke();
-    fill(255, 150); //white bubbles
+    fill(255, 150);
     ellipse(this.x, this.y, this.r * 2);
   }
 
@@ -117,7 +104,7 @@ function drawRipples(px, py, potWidth, potHeight) {
   noFill();
   stroke(0, 100, 255, 100);
   strokeWeight(1);
-  for (let angle of rippleAngles) {
+  for (let angle of ra) {
     let x = px + cos(angle) * potWidth * 0.4 * noise(frameCount * 0.02);
     let y = py + sin(angle) * potHeight * 0.4 * noise(frameCount * 0.02 + 10);
     ellipse(x, y, 20 + noise(frameCount * 0.01) * 15);

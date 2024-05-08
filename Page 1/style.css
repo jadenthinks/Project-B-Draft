@@ -119,7 +119,7 @@ canvas {
 }
 
 body {
-  background-image: url('images/background-image.jpg');
+  background-image: url('images/background-image.png');
   background-repeat: no-repeat;  
   background-size: cover;    
   position: relative;
